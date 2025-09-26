@@ -1,0 +1,8 @@
+﻿@model Auth.Models.ApplicationUser
+<h2>Профиль пользователя</h2>
+<p><b>ФИО:</b> @Model.FullName</p>
+<p><b>Email:</b> @Model.Email</p>
+
+<form asp-controller="Account" asp-action="Logout" method="post">
+    <button type="submit" class="btn btn-danger mt-2">Выйти</button>
+</form>

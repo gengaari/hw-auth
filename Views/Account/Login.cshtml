@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Вход";
+}
+<h2>Вход</h2>
+<form asp-controller="Account" asp-action="Login" method="post">
+    <input type="email" name="email" placeholder="Email" class="form-control" required />
+    <input type="password" name="password" placeholder="Пароль" class="form-control" required />
+    <button type="submit" class="btn btn-primary mt-2">Войти</button>
+</form>
+
+<p>Нет аккаунта? <a asp-controller="Account" asp-action="Register">Зарегистрироваться</a></p>
